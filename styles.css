@@ -20,10 +20,11 @@ body, input[text], button {
 .main {
   width: 100%;
   height: 100%;
+  text-align: center;
 }
 
 .titleText {
-  margin: 0 auto;
+  margin: auto;
 }
 
 /*
