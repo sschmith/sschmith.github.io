@@ -1,18 +1,39 @@
+@font-face {
+    font-family: Roboto;
+    src: url('../fonts/Roboto-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal italic;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url('../fonts/Roboto-Medium.ttf') format('truetype');
+    font-weight: 500 700;
+    font-style: normal;
+}
+
 body {
     font-size: 1rem;
+    font-weight: 300;
+    font-style: normal;
+    font-family: Roboto, 'Segoe UI', 'Helvetica Neue', system-ui, -apple-system, BlinkMacSystemFont, 'Open Sans', sans-serif;
 }
 
 .root {
     max-width: 48rem;
     margin: 0 auto;
     padding: 1rem;
-    font-family: 'Segoe UI', Roboto, Oxygen, system-ui, -apple-system, BlinkMacSystemFont, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+header > div:first-child,
+header .heading-details > div:not(:last-child) {
+    margin-block-end: 0.25rem;
 }
 
 .flex-centered {
-    display: flex;
     align-items: center;
     justify-content: center;
+    display: flex;
 }
 
 .small-text {
@@ -48,29 +69,35 @@ body {
     font-size: 0.85rem;
 }
 
-.job-title {
-    font-weight: 700;
+.emphasized {
+    font-weight: 500;
 }
 
 .icon-link {
-    display: inline;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    max-width: 50%;
+    min-width: 10rem;
 }
 
 .icon-link .logo {
-    max-width: 0.75rem;
-    vertical-align: middle;
+    width: 0.75rem;
+    height: 0.75rem;
 }
 
-.anchor {
-    color: #1F50A8;
-}
-
+.anchor,
 .anchor:visited {
     color: #1F50A8;
 }
 
 .anchor:hover {
     color: darkblue;
+}
+
+span.pipe-separator {
+    font-size: 1.25rem; 
+    font-weight: 300;
 }
 
 .italic {
@@ -84,6 +111,7 @@ body {
 
 .quote-attribution {
     margin-inline: auto 5vh;
+    margin-block-start: 0.25rem;
     font-size: 0.85rem;
 }
 
@@ -92,8 +120,8 @@ body {
 }
 
 .justified-heading {
-    display: flex;
     justify-content: space-between;
+    display: flex;
     align-items: baseline;
 }
 
@@ -102,7 +130,7 @@ body {
     height: 1rem;
     width: 100%;
     margin-inline-start: 0.5rem;
-    border-bottom: 1px darkgray solid;
+    border-bottom: 0.125rem darkgray solid;
 }
 
 .experience-list {
@@ -111,6 +139,10 @@ body {
 
 .experience-list > li {
     margin-block-end: 1rem;
+}
+
+.experience-title {
+    flex-basis: 45%;
 }
 
 .footer {
