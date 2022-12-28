@@ -35,7 +35,7 @@ body {
     margin: 0;
 }
 
-.heading-container {
+.column-dir {
     flex-direction: column;
 }
 
@@ -45,7 +45,6 @@ body {
 }
 
 .heading-details {
-    flex-direction: column;
     font-size: 0.85rem;
 }
 
@@ -80,7 +79,6 @@ body {
 
 .quote {
     display: flex;
-    flex-direction: column;
     margin-block-start: 1.5rem;
 }
 
