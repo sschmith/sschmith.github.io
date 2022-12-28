@@ -1,1 +1,1 @@
-# Steve's Home Page
+# sschmith - Home Page

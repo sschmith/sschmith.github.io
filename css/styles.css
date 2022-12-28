@@ -1,0 +1,130 @@
+body {
+    font-size: 1rem;
+}
+
+.root {
+    max-width: 48rem;
+    margin: 0 auto;
+    padding: 1rem;
+    font-family: 'Segoe UI', Roboto, Oxygen, system-ui, -apple-system, BlinkMacSystemFont, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.flex-centered {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.small-text {
+    font-size: 0.85rem;
+}
+
+.primary-accent-color {
+    color: #1F50A8;
+}
+
+.secondary-accent-color {
+    color: rgb(78, 86, 102);
+}
+
+.no-wrap {
+    white-space: nowrap;
+}
+
+.no-margin {
+    margin: 0;
+}
+
+.heading-container {
+    flex-direction: column;
+}
+
+.name {
+    justify-content: center;
+    font-size: 2rem;
+}
+
+.heading-details {
+    flex-direction: column;
+    font-size: 0.85rem;
+}
+
+.job-title {
+    font-weight: 700;
+}
+
+.icon-link {
+    display: inline;
+}
+
+.icon-link .logo {
+    max-width: 0.75rem;
+    vertical-align: middle;
+}
+
+.anchor {
+    color: #1F50A8;
+}
+
+.anchor:visited {
+    color: #1F50A8;
+}
+
+.anchor:hover {
+    color: darkblue;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.quote {
+    display: flex;
+    flex-direction: column;
+    margin-block-start: 1.5rem;
+}
+
+.quote-attribution {
+    margin-inline: auto 10vh;
+    font-size: 0.85rem;
+}
+
+#content {
+    margin-block-end: 1rem;
+}
+
+.justified-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.info-section-heading-separator {
+    display: inline-block;
+    height: 1rem;
+    width: 100%;
+    margin-inline-start: 0.5rem;
+    border-bottom: 1px darkgray solid;
+}
+
+.experience-list {
+    padding-inline-end: 2.5rem;
+}
+
+.experience-list > li {
+    margin-block-end: 1rem;
+}
+
+.footer {
+    margin: 2rem 0 0;
+    font-size: 0.85rem;
+}
+
+@media (max-width: 480px) {
+    .info-section-heading-container {
+        flex-direction: column;
+    }
+    .info-section-heading-separator {
+        border-bottom: none;
+    }
+}
