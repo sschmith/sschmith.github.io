@@ -166,6 +166,7 @@ span.pipe-separator {
         flex-direction: column;
     }
     .info-section-heading-separator {
+        height: 0;
         margin-inline-start: 0;
         border-bottom: none;
     }
