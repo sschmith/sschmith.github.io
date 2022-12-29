@@ -84,6 +84,7 @@ header .heading-details > div:not(:last-child) {
 }
 
 .icon-link .logo {
+    display: inline-block;
     width: 0.75rem;
     height: 0.75rem;
 }
@@ -129,6 +130,7 @@ span.pipe-separator {
 }
 
 .info-section-heading-container h2 {
+    min-width: -moz-fit-content;
     min-width: fit-content;
 }
 
