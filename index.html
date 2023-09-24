@@ -7,10 +7,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#1F50A8">
   <title>Stephen Schmith - Résumé</title>
-  <link rel="preload" href="fonts/Roboto-Light.ttf" as="font" type="font/ttf" crossorigin="anonymous">
-  <link rel="preload" href="fonts/Roboto-Medium.ttf" as="font" type="font/ttf" crossorigin="anonymous">
   <link rel="preload" href="css/styles.min.css" as="style" type="text/css">
   <link rel="stylesheet" href="css/styles.min.css">
+  <link rel="preload" href="fonts/Roboto-Light.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Roboto-Medium.ttf" as="font" type="font/ttf" crossorigin="anonymous">
   <link rel="shortcut icon" href="images/favicon.ico">
   <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
@@ -334,7 +334,10 @@
       </section>
     </main>
     <footer class="footer flex-centered column-dir" role="contentinfo">
-      <span>©2023 Stephen P. Schmith</span>
+      <span>&copy;
+        <span id="copyrightYear">
+          <script>document.getElementById("copyrightYear").appendChild(document.createTextNode(new Date().getFullYear()));</script>
+        </span> Stephen P. Schmith</span>
       <a href="https://github.com/sschmith/sschmith.github.io" class="anchor">Source code on GitHub.</a>
     </footer>
   </div>
